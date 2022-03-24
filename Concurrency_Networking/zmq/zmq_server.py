@@ -1,0 +1,16 @@
+from doctest import REPORT_UDIFF
+import zmq
+
+host = '127.0.0.1'
+port = 6789
+context = zmq.Context()
+server = context.socket(zmq.REP)
+server.bind("tcp://{}:{}".format(host, port))
+while True:
+    # wait for next requiet from client
+    request_bytes = server.recv()
+    request_str = request_bytes.decode('utf-8')
+    print("That voice in my head says: {}".format(request_str))
+    reply_str = "Stop saying: {}".format(request_str)
+    reply_bytes = bytes(reply_str, 'utf-8')
+    server.send(reply_bytes)
