@@ -1,3 +1,5 @@
+# python doc.py -v
+
 def just_do_it(text):
     """
     >>> just_do_it('duck')

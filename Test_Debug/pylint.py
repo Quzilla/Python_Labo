@@ -1,3 +1,5 @@
+# pylint pylint.py
+
 "ここにモジュールのdocstringを書く"
 # a = 1
 # b = 2
