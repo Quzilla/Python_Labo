@@ -37,8 +37,8 @@ def ccc():
         print("end")
         
 import datetime
-berse = datetime.date(1997,7,23)
-print(type(berse))
-print(berse.weekday())
-party = berse + datetime.timedelta(days=1000)
+birthday = datetime.date(1997,7,23)
+print(type(birthday))
+print(birthday.weekday())
+party = birthday + datetime.timedelta(days=1000)
 print(party)

@@ -1,4 +1,3 @@
-from doctest import REPORT_UDIFF
 import zmq
 
 host = '127.0.0.1'
