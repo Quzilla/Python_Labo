@@ -1,6 +1,5 @@
 from datetime import datetime
 import socket
-from datetime import datetime
 
 address = ('localhost', 6789)
 max_size = 1000
